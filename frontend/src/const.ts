@@ -1,13 +1,6 @@
 import { Offer, Location, CityName, SortName } from './types/types';
 
-export const CITIES = [
-  'Paris',
-  'Cologne',
-  'Brussels',
-  'Amsterdam',
-  'Hamburg',
-  'Dusseldorf',
-];
+export const CITIES = ['Paris', 'Cologne', 'Brussels', 'Amsterdam', 'Hamburg', 'Dusseldorf'];
 export const TYPES = ['apartment', 'room', 'house', 'hotel'] as const;
 export const GOODS = [
   'Breakfast',
@@ -42,13 +35,13 @@ export enum AppRoute {
 }
 
 export enum ApiRoute {
-  Offers = '/offers',
-  Login = '/login',
-  Logout = '/logout',
-  Register = '/register',
-  Avatar = '/avatar',
-  Comments = '/comments',
-  Favorite = '/favorites',
+  Offers = '/offers/',
+  Login = '/users/login/',
+  Logout = '/users/logout/',
+  Register = '/users/register/',
+  Avatar = '/avatar/',
+  Comments = '/comments/',
+  Favorite = '/offers/?favorite=true',
   Premium = '/premium',
 }
 
@@ -67,7 +60,7 @@ export enum Sorting {
 
 export enum UserType {
   Pro = 'pro',
-  Regular = 'regular'
+  Regular = 'regular',
 }
 
 export enum StoreSlice {
